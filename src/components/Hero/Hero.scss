@@ -1,0 +1,124 @@
+.hero--container {
+  
+    height: 92vh;
+    background-color: #120920;
+    display: flex;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    .hero--left--container {
+
+        flex: 1;
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+        padding: 5px;
+
+        div {
+            @media only screen and (max-width: 768px) {
+                display: none;
+            }
+           
+
+            margin: 1px;
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+
+            p {
+                width: 100%;
+                padding: 5px;
+                flex: 1;
+                color: white;
+                font-size: 48px;
+            }
+
+        }
+
+
+        .input-container {
+
+            position: relative;
+            display: inline-block;
+            width: 95%;
+
+            .input-field {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                width: 100%;
+                font-size: 18px;
+                outline: none;
+                border-radius: 99rem;
+                height: 64px;
+            }
+
+            .button-inside {
+
+                @media only screen and (max-width: 768px) {
+                    width: 120px;
+                    font-size: 10px;
+                    padding: 2px;
+                }
+
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                font-size: 16px;
+                padding: 6px 10px;
+                width: 250px;
+                background-color: #8753D4;
+                color: #fff;
+                border: 1px solid white;
+                border-radius: 99rem;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap:10px;
+                &:hover{
+                    color: black;
+                    background-color: #8753D4;
+                    transition-duration: 0.2s;
+                }
+            }
+        }
+
+
+
+
+
+    }
+
+    .hero--right--container {
+        flex: 1;
+
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        @media only screen and (max-width: 768px) {
+            
+            padding: 20px;
+            
+        }
+        img{
+            &:hover{
+                rotate: 5deg;
+                scale: 1.05;
+                transition-duration: 0.3s;
+    
+            }
+
+        }
+       
+    }
+
+
+
+}

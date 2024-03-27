@@ -1,0 +1,32 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-indicator {
+    position: relative;
+    
+    width: 15px;
+    height: 15px;
+    background-color: #362E41; 
+    border-radius: 50%;
+    margin: 75px 0px; /* Add space between indicators */
+    cursor: pointer;
+  }
+  
+  .selected {
+    background-color: #8753D4;
+ 
+  }
+  
+  /* Style for the vertical line */
+  .line {
+    position: absolute;
+    width: 3px; /* Adjust line width as needed */
+    height: 50%; /* Line stretches from top to bottom */
+    background-color: #362E41; /* Adjust line color as needed */
+    left: 7px;
+    top: 75px;
+    transform: translateX(-50%);
+    z-index: -1; /* Ensure the line is behind the dots */
+  }
